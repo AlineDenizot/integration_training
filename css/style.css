@@ -1,0 +1,495 @@
+html, body 
+{
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+
+/*Style*/
+h1
+{
+    font-family: "montserrat-bold", sans-serif;
+    color: rgba(255, 255, 255, 0.35);
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    font-size:1.2rem;
+    text-align :left;
+    font-weight:bold;
+    opacity:1;
+}
+
+h2
+{
+    font-family: "librebaskerville-bold", serif;
+    font-size: 4.2rem;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+    color: #FFFFFF;
+    letter-spacing:-.1rem;
+    font-weight: bold;
+    text-align: left;
+    opacity:1;
+    margin-bottom:2.1rem;
+}
+
+h3
+{
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 1rem;
+    color: #4C2405;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    opacity:1;
+}
+
+h4
+{
+    font-family:"librebaskerville-bold", serif;
+    color: #151515;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 2.1rem;
+    opacity:1;
+    letter-spacing: -.1rem;
+}
+
+h5
+{
+    font-family: "montserrat-regular", sans-serif;
+    color: #4f4f4f;
+    font-size:1.3rem;
+    line-height:2.5rem;
+    margin-bottom: 3.6rem;
+    opacity:1;
+}
+
+p
+{
+    font-family: "librebaskerville-regular", serif;
+    font-size: 1.2rem;;
+    line-height: 2.3rem;
+    text-rendering: optimizeLegibility;
+    color: #353535;
+    opacity: 1;
+}
+
+
+small 
+{
+	font-size: 80%;
+}
+
+/*Orga menu*/
+
+Header
+{
+    min-width:1825px;
+    min-height:1000px;
+}
+
+.Imagefont
+{
+    min-width:1825px;
+    min-height:1000px;
+    background-image: url("images/intro-bg.jpg");
+    background-size:cover;
+    filter: brightness(40%);
+    border:0;
+    z-index:0;
+    position: absolute;
+    padding: 0 !important;
+}
+
+.Menu
+{
+    z-index:1;
+    position:relative;
+    padding: 0;
+
+}
+
+.headerlogo
+{
+    background-repeat:no-repeat;
+    position: relative;
+    margin-top: 30px;
+    margin-left:30px;
+}
+
+/*Orga A propos*/
+
+.Imageabout
+{
+    height: 100%;
+    width:100%;
+    background-image: url("images/profile-bg.jpg");
+    opacity:0.3;
+    background-size: cover;
+    position:absolute;
+    z-index:0;
+    margin: 0;
+    padding: 0;
+}
+
+.textabout
+{   
+    position:relative;
+    z-index:1;
+}
+
+button
+{
+    height: 3.5rem;
+    font-family: "montserrat-bold", sans-serif;
+    font-size:.9rem;
+    padding: auto;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border-radius:none;
+    border:none
+}
+
+.BoutonContact
+{    
+	background:#808080;
+	color:black;
+}
+
+.BoutonContact:hover
+{    
+	background-color: #4f4f4f;
+}
+
+.BoutonDownload
+{
+	background:#222222;
+	color:white;  
+}
+
+.BoutonDownload:hover
+{
+    background-color: black;
+}
+
+/*
+.icon-wrap 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #4C2405;
+}
+
+.icon-wrap i
+{
+    font-size: 5rem;
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-RegisteredTrademark::before 
+{
+    content: "\e992"
+}
+
+*/
+
+
+/*Orga Skills*/
+
+.Skills
+{
+    min-width:1825px;
+    min-height:1000px;
+}
+
+.Imageskills
+{
+    height:1000px;
+    width: 100%;
+    background-image: url("images/skills-bg.jpg");
+    background-size: cover;
+    filter:brightness(40%);
+    position: absolute;
+    padding:0;
+    z-index:0;
+}
+
+.Contenuskills
+{
+    position:relative;
+    z-index:1;
+}
+
+.Textskills h3
+{
+    color:#7c3b08;
+}
+.Textskills p
+{
+    color: #828282;
+}
+
+    /*Barres de compétences*/
+
+.skill-bars li
+{
+    list-style-type: none;
+}
+
+.bar 
+{
+    width: 45em;
+    height: 0.5em;
+    border-radius: 0;
+    position: relative;
+    background: #7c3b08;
+    margin-top: 5em;
+    margin-left:0;
+}
+
+.bar .percentage 
+{
+    position: relative;
+    font-size: 1em;
+    background:white; 
+    height: 0.5em;
+    border-radius: 0;
+    margin-top: 5em;
+    margin-left:0;
+  }
+
+ strong
+{
+    position: absolute;
+    color:white;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+
+  .has-tip:before,
+  .has-tip:after {
+    content: "";
+    position: absolute;
+    opacity: 1;
+  }
+
+  .has-tip::before {
+    content: attr(data-perc);
+    top:-2rem;
+    right: 0;
+    padding: 0.6em;
+    border-radius: 3px;
+    line-height: 1;
+    font-size: .7rem;
+    font-weight: bold;
+    font-family: "montserrat-regular", sans-serif;
+    color: #fff;
+    background: #313131;
+  }
+  
+  .has-tip::after {
+    box-sizing: inherit;
+    bottom: 10px;
+    right:0.8rem;
+    margin-left:-5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #313131;
+  }
+
+
+/*Orga CV*/
+
+.TextCV
+{
+    text-align: center;
+}
+
+.Education h3::before,
+.Expérience h3::before
+{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 3rem;
+    background-color: #aeaeae;
+    position: absolute;
+    left: 2rem;
+}
+
+
+/*
+.timeline-ico 
+{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    background: #4C2405;
+    border-radius: 50%;
+    text-align: center;
+    color: red;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+}
+
+.fa 
+{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+
+.fa-briefcase::before {
+    content: "\f0b1";
+}
+*/
+
+
+.Date
+{
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 1rem;
+    color: #757575;
+    margin-bottom: 0;
+    margin-top: 2rem;
+
+}
+
+.Lieu
+{
+    font-family: "montserrat-bold", sans-serif;
+    color: #151515;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+.Métier,
+.Diplome
+{
+    font-family: "montserrat-bold", sans-serif;
+    color: #151515;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+
+p .TextCV
+{
+    line-height: 1.5rem;
+
+}
+
+/*Orga Portfolio*/
+.Portfolio
+{
+    background-color: #dedede;
+}
+
+.Textportfolio
+{
+    text-align: center;
+}
+
+img
+{
+    max-width:100%;
+    height: auto;
+}
+
+/*Contact*/
+.Contact
+{
+    background-color: black;
+    min-width:1825px;
+    min-height:1000px;
+    text-align: center;
+    
+}
+
+.Imagecontact
+{
+    height:1000px;
+    width: 100%;
+    background-image: url("images/profile-bg.jpg");
+    background-size: cover;
+    filter:brightness(40%);
+    position: absolute;
+    padding:0;
+    z-index:0;
+}
+
+.TextContact
+{
+    position:relative;
+    z-index:1;
+}
+
+.TextContact h3
+{
+    color:#7c3b08;
+}
+
+input, 
+textarea
+{
+    font-family: "montserrat-regular", sans-serif;
+    background: none ;
+    border: none;
+    border-bottom: #4f4f4f;
+    color: #4f4f4f;
+    font-size:1rem;
+    opacity:1;
+    outline : none;
+    padding:0.5rem;
+
+  }
+
+input:focus,
+textarea:focus
+{
+    border-bottom: #7c3b08;
+}
+
+  .FormulaireContact
+  {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      width:100%;
+      margin: auto;
+  }
+
+/*Footer*/
+footer
+{
+    background-color: black
+}
+
+ul li a 
+{
+    font-family: "montserrat-regular", sans-serif;
+    font-weight: bold;
+    color: #828282;
+    list-style-type:none;
+    display:block;
+    float:left;   
+    width:100px;
+    text-align:center;
+    text-align: center;
+}
+
+
