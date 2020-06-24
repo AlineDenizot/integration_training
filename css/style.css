@@ -2,7 +2,15 @@ html, body
 {
     margin:0;
     padding:0;
-    overflow:auto;
+    overflow-x : hidden;
+}
+
+.container-fluid
+{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /*Style*/
@@ -87,12 +95,17 @@ Header
 {
     min-width:1825px;
     min-height:1000px;
+
 }
 
 .Imagefont
 {
-    min-width:1825px;
+    min-width:1000px;
     min-height:1000px;
+    /*width: 100%;
+    height: auto;   
+    top: 0;
+    left: 0; */
     background-image: url("../images/intro-bg.jpg");
     background-size:cover;
     filter: brightness(40%);
@@ -124,6 +137,8 @@ Header
 {
     height: 100%;
     width:100%;
+    top: 0;
+    left: 0;
     background-image: url("../images/profile-bg.jpg");
     opacity:0.3;
     background-size: cover;
@@ -174,33 +189,6 @@ button
     background-color: black;
 }
 
-/*
-.icon-wrap 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #4C2405;
-}
-
-.icon-wrap i
-{
-    font-size: 5rem;
-    font-family: 'icomoon';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-}
-
-.icon-RegisteredTrademark::before 
-{
-    content: "\e992"
-}
-
-*/
-
 
 /*Orga Skills*/
 
@@ -214,6 +202,7 @@ button
 {
     height:1000px;
     width: 100%;
+    left:0;
     background-image: url("../images/skills-bg.jpg");
     background-size: cover;
     filter:brightness(40%);
@@ -315,48 +304,6 @@ button
     text-align: center;
 }
 
-.Education h3::before,
-.Expérience h3::before
-{
-    display: block;
-    content: "";
-    height: 3px;
-    width: 3rem;
-    background-color: #aeaeae;
-    position: absolute;
-    left: 2rem;
-}
-
-
-/*
-.timeline-ico 
-{
-    height: 4rem;
-    width: 4rem;
-    line-height: 4rem;
-    background: #4C2405;
-    border-radius: 50%;
-    text-align: center;
-    color: red;
-    position: absolute;
-    left: 2rem;
-    top: 0;
-}
-
-.fa 
-{
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 14px;
-    font-size: inherit;
-    text-rendering: auto;
-}
-
-
-.fa-briefcase::before {
-    content: "\f0b1";
-}
-*/
-
 
 .Date
 {
@@ -415,19 +362,20 @@ img
 {
     background-color: black;
     min-width:1825px;
-    min-height:1000px;
+    min-height:1400px;
     text-align: center;
     
 }
 
 .Imagecontact
 {
-    height:1000px;
+    height:1400px;
     width: 100%;
     background-image: url("../images/profile-bg.jpg");
     background-size: cover;
     filter:brightness(40%);
     position: absolute;
+    margin: 0;
     padding:0;
     z-index:0;
 }
@@ -443,25 +391,33 @@ img
     color:#7c3b08;
 }
 
+.TextContact h2
+{
+    font-size:3.9em;
+    text-align: center;
+    line-height: 1.2;
+}
+
 input, 
 textarea
 {
     font-family: "montserrat-regular", sans-serif;
     background: none ;
     border: none;
-    border-bottom: #4f4f4f;
+    border-bottom: #4f4f4f 1px solid;
     color: #4f4f4f;
     font-size:1rem;
     opacity:1;
     outline : none;
-    padding:0.5rem;
+    padding:0.8rem;
+    transition: all ease-in-out 0.5s;
 
   }
 
 input:focus,
 textarea:focus
 {
-    border-bottom: #7c3b08;
+    border-bottom: #7c3b08 solid 1px;
 }
 
   .FormulaireContact
@@ -473,23 +429,75 @@ textarea:focus
       margin: auto;
   }
 
+.submit
+{
+    background-color: #7c3b08;
+    color: white;
+    height: 3.5rem;
+    font-family: "montserrat-bold", sans-serif;
+    font-size:.9rem;
+    padding: auto;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border-radius:none;
+    border:none;
+    margin-top: 20px;
+}
+
+.Listecontact
+{
+    position:relative;
+    z-index:1;
+}
+
+.Listecontact h3
+{
+    color : white;
+}
+
+.Listecontact h5
+{
+    font-size: 1.2rem;
+}
+
+
 /*Footer*/
+
 footer
 {
-    background-color: black
+    background-color: black;
+    min-width: 1855px;
+    min-height:150px;
 }
 
-ul li a 
+
+footer ul li
 {
     font-family: "montserrat-regular", sans-serif;
-    font-weight: bold;
-    color: #828282;
-    list-style-type:none;
-    display:block;
-    float:left;   
-    width:100px;
-    text-align:center;
-    text-align: center;
+    list-style:none;
+    display:inline ;
+    margin-left: 75px;
 }
 
 
+footer ul li a,
+footer ul li a:hover
+{
+    text-decoration:none;
+    display:inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #828282;
+    padding: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer p
+{
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
