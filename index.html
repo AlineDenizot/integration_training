@@ -10,9 +10,11 @@
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
 
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       
+      <link rel="icon" href="favicon.ico" />
+      <link rel="icon" type="image/png" href="images/favicon.ico" />
+
       
     </head>
 
@@ -27,38 +29,36 @@
                     <div class="headerlogo col-3">
                         <img src="images/logo.png" width="60" height="60" alt="Logo">
                     </div>
-                    <nav class="col-9">
-                        Menu
-                    </nav>
                     
                 </div>
-                <div class="Marge row">
-                    
-                </div>
+                <div class="Margebefore row"></div>
 
                 <div class="Welcome row">
                     <div class="margesmenu col-lg-2">
                     </div>
-                    <div class="textmenu col-lg-6">
-                        <div class="titremenu">
+                    <div class="textmenu col-lg-6 p-5">
                             <h1> Hello, world. </h1>
-                        </div>
-
-                        <div class="présentation row">
                             <h2>I am Jonathan Smith.<br/> Graphic & UI/UX Designr <br/> Based in Manila Philippines</h2>
-                        </div>
+
+                            <ul>
+                                <li>MORE <a href="#AboutMe">About Me</a></li>
+                                <li>VIEW<a href="#MyWork">My Work</a></li>
+                                <li>CONTACT<a href="#ContactMe">By Email</a></li>
+                            </ul>
+                        
                     </div>    
 
                 </div>
 
-                <div class="Marge row">                    
-                </div>
+                <div class="Margeafter row"></div>
+
+
             </div>
         </header>
 
     <!--A propos-->
         
-        <div class="Apropos container-fluid">
+        <div class="Apropos container-fluid" id="AboutMe">
             <div class="row">
 
             
@@ -86,7 +86,7 @@
                             <div class="Button row">
                                 <button type="button" class="BoutonDownload btn-block mt-1 mx-3">Download CV</button>
                             </div>   
-
+                        
 
 
                         </div>
@@ -102,20 +102,23 @@
                             <h4>What I Do.</h4>
                             <h5>Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam nostrud mollit laboris sunt magna velit. Ut dolor quis deserunt voluptate.</h5>
                         
-
                             <div class="text row">
-                                <div class="Explication col-8">
+                                <div class="Picto col=2">
+                                    <i class="far fa-registered fa-2x"></i>
+                                </div>
+                                <div class="Explication col-10">
                                     <h3>Branding</h3>
                                     <p>
                                         Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. 
                                     </p>
-                                </div>
+                                 </div>
                             </div>
 
                             <div class="text row">
-                                <div class="Picto col=1">
+                                <div class="Picto col=2">
+                                    <i class="far fa-image fa-2x"></i>
                                 </div>
-                                <div class="Explication col-8">
+                                <div class="Explication col-10">
                                     <h3>Photography</h3>
                                     <p>
                                         Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. 
@@ -124,9 +127,10 @@
                             </div>
 
                             <div class="text row">
-                                <div class="Picto col=1">
+                                <div class="Picto col=2">
+                                    <i class="far fa-file-code fa-2x"></i>
                                 </div>
-                                <div class="Explication col-8">
+                                <div class="Explication col-10">
                                     <h3>Webdesign</h3>
                                     <p>
                                         Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. 
@@ -135,9 +139,10 @@
                             </div>
 
                             <div class="text row">
-                                <div class="Picto col=1">
+                                <div class="Picto col=2">
+                                    <i class="far fa-check-circle fa-2x"></i>
                                 </div>
-                                <div class="Explication col-8">
+                                <div class="Explication col-10">
                                     <h3>UX design</h3>
                                     <p>
                                         Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt. 
@@ -145,8 +150,9 @@
                                 </div>
                             </div>
 
-                            
                         </div>
+
+                    </div>
                         <div class="Margeservices col-lg-3"></div>
                     </div>    
                 </div>
@@ -163,49 +169,50 @@
            
             <div class="Imageskills"></div>
 
-                    <div classe="Contenuskills row h-100 mt-5"> 
+            <div classe="Contenuskills row h-100 mt-5"> 
 
-                        <div class="Margeskills col-2">
+                <div class="Margeskills col-lg-1"></div>
 
-                        </div>   
-                        <div class="Textskills col-8 p-5">
-                            <h3>Skills</h3>
-                            <h2>I've Got Some Skills</h2>
-                            <p>
-                                Lorem ipsum Elit ut consequat veniam eu nulla nulla reprehenderit reprehenderit sit velit in cupidatat ex aliquip ut cupidatat Excepteur tempor id irure sed dolore sint sunt voluptate ullamco nulla qui Duis qui culpa voluptate enim ea aute qui veniam in irure et nisi nostrud deserunt est officia minim.
-                            </p>
-                            <ul class="skill-bars">
-                                <li class="bar">
-                                    <div class="percentage has-tip" style="width:90%" data-perc="90%">
-                                    </div>
-                                    <strong>HTML5</strong>
-                                </li>
-                                <li class="bar">
-                                    <div class="percentage has-tip" style="width:85%" data-perc="85%">
-                                    </div>
-                                    <strong>CSS3</strong>
-                                </li>
-                                <li class="bar">
-                                    <div class="percentage has-tip" style="width:70%" data-perc="70%">
-                                     </div> 
-                                     <strong>JQUERY</strong>                                   
-                                </li>
-                                <li class="bar">
-                                    <div class="percentage has-tip" style="width:75%" data-perc="75%">
-                                     </div>
-                                     <strong>WORDPRESS</strong>                                    
-                                </li>
-                                <li class="bar">
-                                    <div class="percentage has-tip" style="width:90%" data-perc="90%">
-                                     </div> 
-                                    <strong>ANGULAR JS</strong>                                   
-                                </li>
-                            </ul>
-                        </div>
+                <div class="Textskills col-12 col-lg-5 p-5">
+                    <h3>Skills</h3>
+                    <h2>I've Got Some Skills</h2>
+                    <p>
+                        Lorem ipsum Elit ut consequat veniam eu nulla nulla reprehenderit reprehenderit sit velit in cupidatat ex aliquip ut cupidatat Excepteur tempor id irure sed dolore sint sunt voluptate ullamco nulla qui Duis qui culpa voluptate enim ea aute qui veniam in irure et nisi nostrud deserunt est officia minim.
+                    </p>
+                    <ul class="skill-bars">
+                        <li class="bar">
+                            <div class="percentage has-tip" style="width:90%" data-perc="90%">
+                            </div>
+                            <strong>HTML5</strong>
+                        </li>
+                        <li class="bar">
+                            <div class="percentage has-tip" style="width:85%" data-perc="85%">
+                            </div>
+                            <strong>CSS3</strong>
+                        </li>
+                        <li class="bar">
+                            <div class="percentage has-tip" style="width:70%" data-perc="70%">
+                                </div> 
+                                <strong>JQUERY</strong>                                   
+                        </li>
+                        <li class="bar">
+                            <div class="percentage has-tip" style="width:75%" data-perc="75%">
+                                </div>
+                                <strong>WORDPRESS</strong>                                    
+                        </li>
+                        <li class="bar">
+                            <div class="percentage has-tip" style="width:90%" data-perc="90%">
+                                </div> 
+                            <strong>ANGULAR JS</strong>                                   
+                        </li>
+                    </ul>
+                </div>
 
-                        <div class="Margeskills col-"></div>  
+                <div class="Margeskills col-md-2 col-lg-6"></div>
+            </div>
 
-                    </div>
+            <div classe="Margeskillsbottom row h-100 mt-5"> </div>
+
         </div>
                     
            
@@ -213,103 +220,145 @@
     <!--CV-->
        <div class="CV container-fluid">
            <div class="row h-100 justify-content-center align-items-center">
-               <div class="TextCV col-6 mt-5">
+               <div class="TextCV col-10 col-lg-6 mt-5 mb-5">
                    <h3>Career and education</h3>
                    <h4>More of my Credentials</h4>
                    <h5>Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.
                    </h5>
                </div>
            </div>
+
            <div class="row h-100">
 
             <!--Partie gauche CV-->
-                <div class="col-6">
-                    <div class="row">
-                        <div class="Margeexpérience col-lg-3"></div>
+                <div class="col-12 col-lg-6">
+                    <div class="row mb-5">
+                        <div class="Margeexpérience col-1 col-lg-2"></div>
 
-                        <div class="Expérience col-lg-9 align-items-right">
-                                <h3>Expérience</h3>
+                        <div class="col-11 col-lg-10 align-items-right">
+                            <div class="row">
+                                <div class="PictoTitre col-2"> </div>
+                                <div class="TitreE col-10">
+                                    <h3>Expérience</h3>
+                                </div>
                                 
-                                <div class="Expérience1">
+                            </div>
+
+                            <div class="row">
+                                <div class="PictoE col-2">
+                                    <i class="fas fa-suitcase fa-1x"></i>
+                                </div>
+                                 <div class="Expérience col-10">
                                     <div class="Date">July 2015 - Present</div>
                                     <div class="Lieu">Awesome Studio</div>
                                     <div class="Métier">UI Designer</div>
                                     <div class="Explicationexpérience"><p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
                                     </div>  
                                 </div>
-
-                                <div class="Expérience2">
+                            </div>
+                                
+                                
+                            <div class="row">
+                                <div class="PictoE col-2">
+                                    <i class="fas fa-suitcase fa-1x"></i>
+                                </div>  
+                                <div class="Expérience col-10">
                                     <div class="Date">July 2014 - June 2015</div>
                                     <div class="Lieu">Super Cool Agency</div>
                                     <div class="Métier">Front-end Developer</div>
                                     <div class="Explicationexpérience"><p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                    </div>  
-                                </div>
+                                    </div> 
+                                </div> 
+                             </div>
 
-                                <div class="Expérience3">
+                             <div class="row">
+                                <div class="PictoE col-2">
+                                    <i class="fas fa-suitcase fa-1x"></i>
+                                </div> 
+                                <div class="Expérience col-10">
                                     <div class="Date">May 2013 - June 2014</div>
                                     <div class="Lieu">Great Designs Studio</div>
                                     <div class="Métier">Web Designer</div>
                                     <div class="Explicationexpérience"><p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
                                     </div>  
                                 </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
-               <!--Partie droite CV-->
+            <!--Partie droite CV-->
 
-                <div class="col-6">
-                    <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="row mb-5">
 
-                        <div class="Margeéducation col-lg-1">
-                            <div class="timeline-ico">
-                                    <i class="fa fa-graduation-cap"></i>
+                            <div class="Margeexpérience col-1 col-lg-0"></div>
+
+
+                            <div class="col-11 col-lg-10">
+                                <div class="row">
+                                    <div class="PictoTitre col-2"> </div>
+                                    <div class="TitreE col-10">
+                                        <h3>Education</h3>
+                                    </div>
                                 </div>
+
+                                <div class="row">
+                                    <div class="PictoE col-2">
+                                        <i class="fas fa-graduation-cap fa-1x"></i>
+                                    </div>  
+                                    <div class="Education col-10">
+                                        <div class="Date">June 2012 - April 2013</div>
+                                        <div class="Lieu">University of Life</div>
+                                        <div class="Diplome">Master Degree</div>
+                                        <div class="Explicationéducation">
+                                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="PictoE col-2">
+                                        <i class="fas fa-graduation-cap fa-1x"></i>
+                                    </div>
+                                    <div class="Education col-10">
+                                        <div class="Date">June 2008 - March 2012 </div>
+                                        <div class="Lieu">State Design University</div>
+                                        <div class="Diplome">Bachelor Degree</div>
+                                        <div class="Explicationéducation">
+                                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="PictoE col-2">
+                                        <i class="fas fa-graduation-cap fa-1x"></i>
+                                    </div>
+                                    <div class="Education col-10">
+                                        <div class="Date">June 2006 - October 2008 </div>
+                                        <div class="Lieu">Design College</div>
+                                        <div class="Diplome">Bachelor Degree</div>
+                                        <div class="Explicationéducation">
+                                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                            </div>
+                                
+                            <div class="Margeexpérience col-lg-2"></div>
                         </div>
-
-                        <div class="Education col-lg-8">
-                            <h3>Education</h3>
-
-                            <div class="Education1">   
-                                <div class="Date">June 2012 - April 2013</div>
-                                <div class="Lieu">University of Life</div>
-                                <div class="Diplome">Master Degree</div>
-                                <div class="Explicationéducation">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>  
-                            </div>
-
-                            <div class="Education2">
-                                <div class="Date">June 2008 - March 2012 </div>
-                                <div class="Lieu">State Design University</div>
-                                <div class="Diplome">Bachelor Degree</div>
-                                <div class="Explicationéducation">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>  
-                            </div>
-
-                            <div class="Education3">
-                                <div class="Date">June 2006 - October 2008 </div>
-                                <div class="Lieu">Design College</div>
-                                <div class="Diplome">Bachelor Degree</div>
-                                <div class="Explicationéducation">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>  
-                            </div>
-
-                        </div>
-                            
-                        <div class="Margeexpérience col-lg-3"></div>
                     </div>
-                </div>
+            </div>
+        </div>
 
     <!--Portfolio-->
-       <div class="Portfolio container-fluid">
+       <div class="Portfolio container-fluid" id="MyWork">
 
             <div class="row h-100 justifiy-content-center align-items-center mt-5">
-                <div class="Textportfolio col-6 mx-auto pt-5">
+                <div class="Textportfolio col-11 col-lg-6 mx-auto pt-5">
                     <h3>Portfolio</h3>
                     <h4>See my lastest project</h4>
                     <h5>
@@ -317,19 +366,19 @@
                     </h5>
                 </div>
           
-            <div class="images row">
-                <div class="Margesportefolio col-lg-2 pb-5 mb-5"></div>
-                <div class="Photos1 col-6 col-lg-4 m-0 p-0 pb-5 mb-5">
+            <div class="images row h-100 justifiy-content-center">
+                <div class="Margesportefolio col-1 col-lg-2 pb-5 mb-5"></div>
+                <div class="Photos1 col-5 col-lg-4 m-0 p-0 pb-5 mb-5">
                     <img src="images/portfolio/skaterboy.jpg" alt="Skaterboy"/>
                     <img src="images/portfolio/minimalismo.jpg" alt="Plante"/>
                     <img src="images/portfolio/salad.jpg" alt="Gastronomie"/>
                 </div>
-                <div class="Photos2 col-6 col-lg-4 m-0 p-0 pb-5 mb-5">
+                <div class="Photos2 col-5 col-lg-4 m-0 p-0 pb-5 mb-5">
                     <img src="images/portfolio/shutterbug.jpg" alt="Portrait"/>
                     <img src="images/portfolio/explore.jpg" alt="Affiche"/>
                     <img src="images/portfolio/bicycle.jpg" alt="Vélo"/>
                 </div>
-                <div class="Margesportefolio col-lg-2 pb-5 mb-5"></div>
+                <div class="Margesportefolio col-1 col-lg-2 pb-5 mb-5"></div>
             </div>
 
             </div>
@@ -337,13 +386,13 @@
 
 
     <!--Contact-->
-       <div class="Contact container-fluid">
+       <div class="Contact container-fluid" id="ContactMe">
 
             <div class="Imagecontact"></div>
 
             <div class="row justifiy-content-center align-items-center mt-5">
 
-                <div class="TextContact col-5 mx-auto pt-5">
+                <div class="TextContact col-10 col-lg-5 col-10 mx-auto pt-5">
 
                     <h3>Contact</h3>
                     <h2>I'm Available for Freelance Work. Feel Free to Contact Me.</h2>
@@ -373,7 +422,7 @@
             <div class="row pt-5 justify-content-center mt-5">
                 
 
-                <div class="Listecontact col-3">
+                <div class="Listecontact col-10 col-lg-3">
                     <h3>WHERE TO FIND ME </h3>
                     <h5>
                         1600 Amphitheatre Parkway <br/>
@@ -381,14 +430,14 @@
                         94043 US
                     </h5>
                 </div>
-                <div class="Listecontact col-3 m-0">
+                <div class="Listecontact col-10 col-lg-3 m-0">
                     <h3>EMAIL ME AT</h3>
                     <h5>
                         someone@howdywebsite.com <br/>
                         info@howdywebsite.com
                     </h5>
                 </div>
-                <div class="Listecontact col-3">
+                <div class="Listecontact col-10 col-lg-3">
                     <h3>CALL ME AT</h3>
                     <h5>
                         Phone: (+63) 555 1212 <br/>
@@ -406,9 +455,9 @@
         <footer>
             <div class="container-fluid">
 
-                <div class="Reseaux row h-100 justify-content-center align-items-center">
+                <div class="Reseaux row h-100 justify-content-center align-items-center mx-0">
 
-                    <div class= "col-8">
+                    <div class= "col-12 col-md-10 col-lg-8 mx-auto">
                          <ul>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Twitter</a></li>
@@ -417,7 +466,8 @@
                             <li><a href="#">Instagram</a></li>
                         </ul>
                         
-                        <p>Intégration Aline Denizot d'après la maquette Howdy 2016 ©Copyright.</p>
+                        <p>Intégration : Aline Denizot <br/> 
+                            Maquette initiale ©Copyright Howdy 2016 .</p>
                     </div> 
                 </div>
     
